@@ -1,11 +1,17 @@
 rails generate model Student legajo:string dni:integer lastname:string name:string email:string
-rails generate model Cours year:date description:integer
+rails generate model Course year:date description:integer
 #rails generate model Exam description:string note:integer date:date
 #rails generate model Job description:string date:date
 rails generate model Teacher name:string description:string
 rails generate model User password:string email:string
 rails generate model Activity description:string date:date nota:integer
 rails generate model Note nota:integer
+
+migrations:
+las pongo en este orden porque sino me tira errores de que ya existen:
+rails db:migrate:up VERSION=20171203001644  (courses, students, activities, notes)
+rails db:migrate:up VERSION=20171202221511 (users)
+rails db:migrate:up VERSION=20171201201459  (teachers)
 
 mail:aplicacionRuby2017@gmail.com
 pass:trabajoRuby2017

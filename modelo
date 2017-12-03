@@ -1,0 +1,15 @@
+rails generate model Student legajo:string dni:integer lastname:string name:string email:string
+rails generate model Cours year:date description:integer
+#rails generate model Exam description:string note:integer date:date
+#rails generate model Job description:string date:date
+rails generate model Teacher name:string description:string
+rails generate model User password:string email:string
+rails generate model Activity description:string date:date nota:integer
+rails generate model Note nota:integer
+
+mail:aplicacionRuby2017@gmail.com
+pass:trabajoRuby2017
+
+urls importantes:
+-devise:
+	http://www.peoplecancode.com/es/tutorials/how-to-manage-users-with-devise-ruby-on-rails

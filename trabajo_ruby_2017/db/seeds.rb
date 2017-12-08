@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Course.create([{ year: 2017, description: 'Cursada primer cuatrimestre'}])
+Student.create([{ legajo: 1111111, dni: 12345, lastname:'Lopez', name:'Julio', email: 'lalo@landa.com', course_id: 1 },
+                 { legajo: 1112222, dni: 1234532, lastname:'Lopez', name:'Pedro', email: 'lalolo@landa.com', course_id: 1 }])
+Activity.create([{ description: 'Primer parcial', date: '20/09/2017', minimum: 10, course_id: 1},
+				{ description: 'Segundo parcial', date: '20/11/2017', minimum: 10, course_id: 1}])
+Note.create([{ nota:11, activity_id: 1, student_id: 1},
+				{ nota:12, activity_id: 2, student_id: 1},
+				{ nota:7, activity_id: 1, student_id: 2},
+				{ nota:15, activity_id: 2, student_id: 2}])
